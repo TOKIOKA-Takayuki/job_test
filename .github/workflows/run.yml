@@ -12,6 +12,6 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-      run: node index.js
-      env:
-        INPUT: ${{ inputs.data }}
+      - run: node index.js
+        env:
+          INPUT: ${{ inputs.data }}
